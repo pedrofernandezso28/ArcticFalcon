@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Arctic Falcon Labs — Software, Algorithms & AI Agents</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>
+const TWEAKS = /*EDITMODE-BEGIN*/{
+  "accent": "#9fbcd0",
+  "auroraIntensity": 1.5,
+  "particles": true,
+  "glitch": true
+}/*EDITMODE-END*/;
+</script>
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
+<div class="aurora" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#" class="brand">
+    <span class="brand-mark">
+      <img src="assets/logo.png" alt="" style="width:100%;height:100%;object-fit:contain;filter:brightness(1.1)" />
+    </span>
+    <span class="brand-name"><b>arcticfalcon</b><i>labs</i></span>
+  </a>
+  <div class="nav-links">
+    <a href="#capabilities">Capabilities</a>
+    <a href="#platform">Platform</a>
+    <a href="#markets">Markets</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-cta">Start a build →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <h1 class="display">
+    <span class="line"><span>We build the tools</span></span>
+    <span class="line"><span class="italic">that reshape</span></span>
+    <span class="line"><span class="gradient-text">entire markets.</span></span>
+  </h1>
+
+  <div class="hero-grid">
+    <div>
+      <p class="hero-sub">
+        <b>Arctic Falcon Labs</b> is a software studio engineering algorithms, autonomous AI agents and production-grade applications for industries ready to be rewritten — finance, logistics, health, energy. We work at the altitude where precision meets instinct.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Launch a project <span class="arrow">→</span></a>
+        <a href="#platform" class="btn btn-ghost">See the platform <span class="arrow">↓</span></a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="ring"></div>
+      <div class="ring r2"></div>
+      <div class="ring r3"></div>
+      <div class="logo-wrap"><img src="assets/logo.png" alt="Arctic Falcon Labs" /></div>
+      <span class="tick t1">N · 90°</span>
+      <span class="tick t2">S · 180°</span>
+      <span class="tick t3">W · 270°</span>
+      <span class="tick t4">E · 0°</span>
+      <div class="readout">
+        <span>LAT <b>81.7° N</b></span>
+        <span>ALT <b>∞</b></span>
+        <span>SYS <b>ONLINE</b></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-meta">
+    <div class="cell"><div class="k"><span class="counter" data-to="47">0</span></div><div class="l">Shipped Products</div></div>
+    <div class="cell"><div class="k"><span class="counter" data-to="12">0</span>+</div><div class="l">Industries Served</div></div>
+    <div class="cell"><div class="k"><span class="counter" data-to="99.97" data-decimals="2">0</span>%</div><div class="l">Uptime Median</div></div>
+    <div class="cell"><div class="k">24 / 7</div><div class="l">Agents Running</div></div>
+  </div>
+
+  <div class="scroll-hint">scroll<span class="bar"></span></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Software Engineering</span><span>Algorithmic Trading</span><span>AI Agents</span><span>Mobile & Web Apps</span><span>Quantitative Systems</span><span>Computer Vision</span>
+    <span>Software Engineering</span><span>Algorithmic Trading</span><span>AI Agents</span><span>Mobile & Web Apps</span><span>Quantitative Systems</span><span>Computer Vision</span>
+  </div>
+</div>
+
+<!-- CAPABILITIES / SERVICES -->
+<section id="capabilities" class="wrap">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-label">01 — Capabilities</div>
+      <h2 class="section-title">Four disciplines. One hunting pack.</h2>
+    </div>
+    <p class="section-sub">We don't consult from the sidelines. We embed, architect and ship — from the first whiteboard session to the production cluster humming at 3am.</p>
+  </div>
+
+  <div class="services reveal">
+    <div class="service">
+      <div>
+        <div class="num">01</div>
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 10h36v28H6z"/><path d="M6 16h36"/><path d="M14 23l-4 4 4 4"/><path d="M20 23l4 4-4 4"/><path d="M28 32l4-6"/></svg>
+        <h3>Software<br/>Engineering</h3>
+        <p>Production systems built by senior engineers. Distributed backends, event pipelines, design systems, developer platforms — the plumbing that doesn't leak.</p>
+      </div>
+      <div class="tags"><span>TypeScript</span><span>Rust</span><span>Go</span><span>k8s</span></div>
+    </div>
+
+    <div class="service">
+      <div>
+        <div class="num">02</div>
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 36L14 22l6 8 8-18 6 14 8-8"/><circle cx="14" cy="22" r="2"/><circle cx="20" cy="30" r="2"/><circle cx="28" cy="12" r="2"/><circle cx="34" cy="26" r="2"/></svg>
+        <h3>Algorithms &<br/>Quant Systems</h3>
+        <p>Strategy research, low-latency engines, risk models and signal pipelines. The math is rigorous, the execution is boring — exactly as it should be.</p>
+      </div>
+      <div class="tags"><span>Python</span><span>C++</span><span>Rust</span><span>FIX</span></div>
+    </div>
+
+    <div class="service">
+      <div>
+        <div class="num">03</div>
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="24" cy="24" r="16"/><path d="M24 8v32M8 24h32"/><path d="M12 14c4 4 16 4 24 0M12 34c4-4 16-4 24 0"/></svg>
+        <h3>Autonomous<br/>AI Agents</h3>
+        <p>Goal-directed agents with tool access, memory, and guardrails. We design them, evaluate them, and keep them from hallucinating in production.</p>
+      </div>
+      <div class="tags"><span>Claude</span><span>RAG</span><span>Evals</span><span>MCP</span></div>
+    </div>
+
+    <div class="service">
+      <div>
+        <div class="num">04</div>
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="12" y="4" width="24" height="40" rx="3"/><path d="M12 10h24M12 38h24"/><circle cx="24" cy="41" r="1.2" fill="currentColor"/></svg>
+        <h3>Apps &<br/>Product Design</h3>
+        <p>Native iOS, Android and web — shipped fast, polished slow. Designers and engineers sharing the same repo, the same opinion, the same 4am build.</p>
+      </div>
+      <div class="tags"><span>Swift</span><span>Kotlin</span><span>React</span><span>Figma</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM / TERMINAL -->
+<section id="platform" class="wrap">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-label">02 — The Platform</div>
+      <h2 class="section-title">A nervous system for<br/>your operation.</h2>
+    </div>
+    <p class="section-sub">Arctic is our internal platform for deploying and monitoring autonomous systems. Every client project stands on it — which means you inherit a decade of hardening from day one.</p>
+  </div>
+
+  <div class="terminal-section">
+    <div class="terminal reveal">
+      <div class="terminal-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="title">arctic@falcon — ops.dashboard</span>
+      </div>
+      <div class="terminal-body" id="termBody">
+        <!-- populated by JS -->
+      </div>
+    </div>
+
+    <div class="reveal">
+      <h3 style="font-family:'Space Grotesk';font-size:28px;font-weight:400;letter-spacing:-.02em;line-height:1.15">Orchestration, observability and guardrails — from the first commit.</h3>
+      <ul class="feat-list">
+        <li><div class="n">→ 01</div><div><h4>Agent fleet orchestration</h4><p>Route tasks to the right model, tool, or human. Fail open, never silent.</p></div></li>
+        <li><div class="n">→ 02</div><div><h4>Live evals & drift detection</h4><p>Every agent decision scored against ground truth. Regressions caught before customers do.</p></div></li>
+        <li><div class="n">→ 03</div><div><h4>Zero-trust data plane</h4><p>Per-tenant encryption, audit trails, and fine-grained permissions — compliance-ready out of the box.</p></div></li>
+        <li><div class="n">→ 04</div><div><h4>One-command deploys</h4><p>From pull-request to production in under 90 seconds, with automatic rollback.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETS -->
+<section id="markets" class="wrap">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-label">03 — Markets we rewrite</div>
+      <h2 class="section-title">Old industries.<br/>New instincts.</h2>
+    </div>
+    <p class="section-sub">We pick verticals where incumbents are sleepy, where data is dense, and where a small crew with sharp tools can tilt the floor.</p>
+  </div>
+
+  <div class="markets reveal">
+    <div class="market">
+      <svg class="pattern" viewBox="0 0 140 140" fill="none" stroke="var(--accent)" stroke-width=".8">
+        <path d="M10 110 L40 80 L60 95 L90 40 L130 30"/>
+        <circle cx="40" cy="80" r="3"/><circle cx="60" cy="95" r="3"/><circle cx="90" cy="40" r="3"/>
+      </svg>
+      <div>
+        <div class="mkt-label">· Finance</div>
+        <h3>Algorithmic<br/>trading desks.</h3>
+        <p>Execution engines, alpha research workflows, and risk dashboards for funds that treat latency as a competitive moat.</p>
+      </div>
+      <div class="foot"><span>Live deployments · 14</span><span class="arrow">↗</span></div>
+    </div>
+
+    <div class="market">
+      <svg class="pattern" viewBox="0 0 140 140" fill="none" stroke="var(--accent)" stroke-width=".8">
+        <rect x="20" y="20" width="100" height="100" rx="4"/>
+        <path d="M20 50h100M50 20v100"/>
+        <circle cx="80" cy="80" r="18"/>
+      </svg>
+      <div>
+        <div class="mkt-label">· Logistics</div>
+        <h3>Supply chains<br/>that think.</h3>
+        <p>Route optimization, warehouse agents and demand forecasting for fleets operating across borders and time zones.</p>
+      </div>
+      <div class="foot"><span>Live deployments · 09</span><span class="arrow">↗</span></div>
+    </div>
+
+    <div class="market">
+      <svg class="pattern" viewBox="0 0 140 140" fill="none" stroke="var(--accent)" stroke-width=".8">
+        <path d="M30 70 Q70 20 110 70 T190 70" />
+        <path d="M30 90 Q70 40 110 90" />
+        <circle cx="70" cy="50" r="2"/><circle cx="110" cy="70" r="2"/>
+      </svg>
+      <div>
+        <div class="mkt-label">· Health</div>
+        <h3>Clinical copilots<br/>for real clinics.</h3>
+        <p>HIPAA-compliant assistants, imaging pipelines, and triage agents designed with the people who actually use them.</p>
+      </div>
+      <div class="foot"><span>Live deployments · 06</span><span class="arrow">↗</span></div>
+    </div>
+
+    <div class="market">
+      <svg class="pattern" viewBox="0 0 140 140" fill="none" stroke="var(--accent)" stroke-width=".8">
+        <polygon points="70,15 125,120 15,120" />
+        <polygon points="70,45 105,110 35,110" />
+      </svg>
+      <div>
+        <div class="mkt-label">· Energy</div>
+        <h3>Grids, wells,<br/>and forecasts.</h3>
+        <p>Operational intelligence for utilities and extractors — from SCADA ingestion to predictive maintenance agents.</p>
+      </div>
+      <div class="foot"><span>Live deployments · 04</span><span class="arrow">↗</span></div>
+    </div>
+
+    <div class="market">
+      <svg class="pattern" viewBox="0 0 140 140" fill="none" stroke="var(--accent)" stroke-width=".8">
+        <circle cx="70" cy="70" r="40"/><circle cx="70" cy="70" r="22"/>
+        <path d="M70 20v100M20 70h100"/>
+      </svg>
+      <div>
+        <div class="mkt-label">· Defense & GovTech</div>
+        <h3>Quiet software<br/>for serious operators.</h3>
+        <p>Secure platforms, analytical tooling, and situational awareness for public-sector teams who can't afford the wrong answer.</p>
+      </div>
+      <div class="foot"><span>Classified · —</span><span class="arrow">↗</span></div>
+    </div>
+
+    <div class="market">
+      <svg class="pattern" viewBox="0 0 140 140" fill="none" stroke="var(--accent)" stroke-width=".8">
+        <path d="M20 100 L40 60 L60 80 L80 40 L100 70 L120 30"/>
+        <path d="M20 110 L120 110"/>
+      </svg>
+      <div>
+        <div class="mkt-label">· Consumer</div>
+        <h3>Apps people<br/>keep on page one.</h3>
+        <p>Product experiences built with designers who actually ship — from onboarding to retention loops that compound.</p>
+      </div>
+      <div class="foot"><span>Live deployments · 14</span><span class="arrow">↗</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="wrap">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-label">04 — How we hunt</div>
+      <h2 class="section-title">Four weeks to<br/>the first real artifact.</h2>
+    </div>
+    <p class="section-sub">No 90-day discovery phases. We ship a functioning prototype in the first sprint — because the only way to find the right product is to hold a wrong one in your hands.</p>
+  </div>
+
+  <div class="process reveal">
+    <div class="step"><div class="n">01</div><h4>Sight</h4><p>One week pressure-testing the problem with your team. We come back with a scoped proposal or a clean "this isn't for us."</p></div>
+    <div class="step"><div class="n">02</div><h4>Dive</h4><p>A cross-functional pod embeds. Architecture, designs and a functioning vertical slice — in four weeks or less.</p></div>
+    <div class="step"><div class="n">03</div><h4>Strike</h4><p>Production build. Short sprints, hard deadlines, weekly shipping demos. You see everything we see.</p></div>
+    <div class="step"><div class="n">04</div><h4>Migrate</h4><p>Handoff — or stay on retainer. Either way, you own the code, the data, and the playbook.</p></div>
+  </div>
+</section>
+
+<!-- Big wordmark -->
+<div class="wordmark reveal">arcticfalcon<b>labs</b></div>
+
+<!-- CTA -->
+<section id="contact" class="cta">
+  <div class="reveal">
+    <h2>Ready to rewrite<br/><span class="italic">your</span> market?</h2>
+    <p>Tell us what you'd rebuild if legacy wasn't in the way. We'll reply within 48 hours with an honest read — and, if it's a fit, a starting point.</p>
+    <div class="actions">
+      <a href="mailto:hello@arcticfalconlabs.com" class="btn btn-primary">hello@arcticfalconlabs.com <span class="arrow">→</span></a>
+      <a href="#" class="btn btn-ghost">Book an intro call <span class="arrow">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-col">
+      <div class="brand" style="margin-bottom:18px">
+        <span class="brand-mark"><img src="assets/logo.png" alt="" style="width:100%;height:100%;object-fit:contain" /></span>
+        <span class="brand-name"><b>arcticfalcon</b><i>labs</i></span>
+      </div>
+      <p>A software studio engineering the tools that reshape entire markets. Headquartered in the cold places; shipping everywhere.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Studio</h5>
+      <a href="#">Capabilities</a><a href="#">Platform</a><a href="#">Markets</a><a href="#">Process</a>
+    </div>
+    <div class="foot-col">
+      <h5>Company</h5>
+      <a href="#">About</a><a href="#">Careers · 4 open</a><a href="#">Press kit</a><a href="#">Security</a>
+    </div>
+    <div class="foot-col">
+      <h5>Contact</h5>
+      <a href="mailto:hello@arcticfalconlabs.com">hello@arcticfalconlabs.com</a>
+      <a href="#">Media enquiries</a>
+      <a href="#">Vendor portal</a>
+    </div>
+  </div>
+  <div class="foot-bar">
+    <span>© 2026 Arctic Falcon Labs · All systems operational</span>
+    <span>Lat 81.7° N · Lon 37.2° W</span>
+  </div>
+</footer>
+
+<!-- Tweaks panel -->
+<div class="tweaks" id="tweaks">
+  <h6>Tweaks <span style="opacity:.5">ctrl</span></h6>
+  <div class="tweak-row"><span>Accent</span><input type="color" id="tk-accent" /></div>
+  <div class="tweak-row"><span>Aurora</span><input type="range" id="tk-aurora" min="0" max="1.5" step="0.05" /></div>
+  <div class="tweak-row"><span>Particles</span><input type="checkbox" id="tk-particles" /></div>
+  <div class="tweak-row"><span>Glitch Hero</span><input type="checkbox" id="tk-glitch" /></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
